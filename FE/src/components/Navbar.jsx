@@ -17,6 +17,7 @@ const NavBar = () => {
                 </div>
                 <div className="searchAndCart">
                     <div className="search">
+                        <input type="text" />
                         <i className="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <div className="cart">

@@ -1,10 +1,9 @@
 import './Footer.css';
 
-
 function FooterList(prop) {
     return (
         <div className="footerLink">
-            <h3>{prop.catalog}</h3>
+            <h3><i className="fa-solid fa-lines-leaning"></i>{prop.catalog}</h3>
             <a href={prop.option1.url}>{prop.option1.title}</a>
             <a href={prop.option2.url}>{prop.option2.title}</a>
             <a href={prop.option3.url}>{prop.option3.title}</a>
@@ -18,10 +17,10 @@ function Footer() {
     return (
         <footer>
             <div className="referent">
-                <a href="">youtube</a>
-                <a href="">instagram</a>
-                <a href="">facebook</a>
-                <a href="">twiter</a>
+                <a href=""><i className="fa-brands fa-youtube"></i></a>
+                <a href=""><i className="fa-brands fa-instagram"></i></a>
+                <a href=""><i className="fa-brands fa-facebook"></i></a>
+                <a href=""><i className="fa-brands fa-twitter"></i></a>
             </div>
             <div className="mainFooter">
                 <div className="footerLeft">

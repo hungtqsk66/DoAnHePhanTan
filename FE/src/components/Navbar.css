@@ -27,9 +27,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color .5s linear;
 }
 .navOption:hover{
-    background-color: #000;
+    background-color: #333;
 }
 .countItems{
     width:15px;
@@ -49,20 +50,26 @@
     gap: 20px;
     text-align: center;
 }
-.search,.cart{
-    padding: 6px 10px;
-    font-size: 18px;
+.search i,.cart i{
+    padding: .45em .5em;
+    font-size: 20px;
     border: 1px solid #ccc;
     cursor: pointer;
 }
-.search:hover,.cart:hover{
+.search i:hover,.cart i:hover{
     background-color: #f1f1f1;
 }
+.search input{
+    margin-right: 10px;
+    width: 200px;
+    padding: 8px 5px;
+}
+
 .cart{
     position: relative;
 }
 .countItems{
     position: absolute;
-    top: -6px;
-    left : 31px;
+    top: -15%;
+    right : -15%;
 }
