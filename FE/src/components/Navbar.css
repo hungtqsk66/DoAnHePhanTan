@@ -1,0 +1,68 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.menu .logo{
+    width: 300px;
+}
+.menu .navOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navOption{
+    min-width: 150px;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navOption:hover{
+    background-color: #000;
+}
+.countItems{
+    width:15px;
+    height:15px;
+    color:white;
+    border-radius:100%; 
+    background-color:red; 
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchAndCart{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+}
+.search,.cart{
+    padding: 6px 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.search:hover,.cart:hover{
+    background-color: #f1f1f1;
+}
+.cart{
+    position: relative;
+}
+.countItems{
+    position: absolute;
+    top: -6px;
+    left : 31px;
+}

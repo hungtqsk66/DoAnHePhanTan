@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    text-align: center;
+}
+.referent{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin: 10px 0;
+}
+.referent a{
+    background-color: #ccc;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.5em;
+}
+
+.mainFooter{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+    text-align: left;
+}
+.infoBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.infoBox i{
+    font-size: 22px;
+    color: #f41a1a;
+}

@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.slideContainer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+.slideBox{
+    display: flex;
+    width: 100%;
+    transition: all .65s linear;
+}
+.slideBox img{
+    display: block;
+    min-width: 100%;
+}
+.groupBtn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+.btnSlide{
+    padding: 25px;
+    background-color: transparent;
+    height: 100%;
+    border-radius: 0;
+    width: 150px;
+    opacity: .4;
+    font-size: 2.5rem;
+    border: none;
+}
+.btnSlide:hover{
+    opacity: .6;
+}
+.prevBtn{
+    text-align: left;
+    background-image: linear-gradient(90deg, #fff, transparent);
+}
+.nextBtn{
+    text-align: right;
+    background-image: linear-gradient(90deg, transparent, #fff);
+}
+
