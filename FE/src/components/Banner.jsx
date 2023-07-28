@@ -5,15 +5,15 @@ import './Banner.css'
 function Banner() {
   const slideMap = [
     {
-      pic: 'https://vapa.vn/wp-content/uploads/2022/12/hinh-nen-hoa-tulip-001.jpg',
+      pic: 'https://hinhanh.webvua.com/images/slider/4850/resize/5426200326232.jpg',
       url: ''
     },
     {
-      pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZAq08u4YaR0Jsu2CgeptdxC74y-9QEeFYEAb6YHP&s',
+      pic: 'https://hinhanh.webvua.com/images/slider/4850/resize/0424002456253.jpg',
       url: ''
     },
     {
-      pic: 'https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=',
+      pic: 'https://hinhanh.webvua.com/images/news/4850/resize/0424220420303.jpg',
       url: ''
     }
   ]

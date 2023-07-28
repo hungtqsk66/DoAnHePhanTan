@@ -1,0 +1,38 @@
+.typeList{
+    width: 100%;
+    padding: 20px;
+}
+.typeList h2 i{
+    color: rgb(184, 55, 55);
+    margin: 0 14px;
+}
+.listContent{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.listBox a{
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #d8d8d8;
+}
+.listBox:hover a{
+    background-color: #333;
+    color: #f8f8f8;
+    opacity: .9;
+    transition: all .5s ease-out;
+}
+.listBox:hover img{
+    opacity: 0.9;
+    transition: opacity .4s ease;
+    
+    cursor: pointer;
+}
