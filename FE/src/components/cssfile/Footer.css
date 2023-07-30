@@ -6,7 +6,7 @@ footer{
     height: 100px;
     padding: 20px 0;
     background-color: none;
-    background-image: url("../../public/images/background1.png");
+    background-image: url("/images/background1.png");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;

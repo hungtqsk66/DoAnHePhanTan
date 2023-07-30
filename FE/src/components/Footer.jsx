@@ -1,14 +1,14 @@
-import './Footer.css';
+import './cssfile/Footer.css';
 
 function FooterList(prop) {
     return (
         <div className="footerLink">
             <h3><i className="fa-solid fa-lines-leaning"></i>{prop.catalog}</h3>
-            <a href={prop.option1.url}>{prop.option1.title}</a>
-            <a href={prop.option2.url}>{prop.option2.title}</a>
-            <a href={prop.option3.url}>{prop.option3.title}</a>
-            <a href={prop.option4.url}>{prop.option4.title}</a>
-            <a href={prop.option5.url}>{prop.option5.title}</a>
+            <a href={prop.url1}>{prop.title1}</a>
+            <a href={prop.url2}>{prop.title2}</a>
+            <a href={prop.url3}>{prop.title3}</a>
+            <a href={prop.url4}>{prop.title4}</a>
+            <a href={prop.url5}>{prop.title5}</a>
         </div>
     )
 }
@@ -49,72 +49,34 @@ function Footer() {
                 <div className="footerRight">
                     <FooterList
                         catalog="MENU"
-                        option1={{
-                            title: "Trang Chủ",
-                            url: ""
-                        }}
-                        option2={{
-                            title: "Sản phẩm",
-                            url: ""
-                        }}
-                        option3={{
-                            title: "Tin Tức",
-                            url: ""
-                        }}
-                        option4={{
-                            title: "Liên Hệ",
-                            url: ""
-                        }}
-                        option5={{
-                            title: "",
-                            url: ""
-                        }}
+                        title1="Trang Chủ"
+                        url1=""
+                        title2="Sản phẩm"
+                        url2=""
+                        title3="Tin Tức"
+                        url3=""
+                        title4="Liên Hệ"
+                        url4=""
                     />
                     <FooterList
                         catalog="DANH MỤC"
-                        option1={{
-                            title: "Đèn ô tô",
-                            url: "#"
-                        }}
-                        option2={{
-                            title: "Thiết bị thông minh",
-                            url: "#"
-                        }}
-                        option3={{
-                            title: "Lốp bánh xe",
-                            url: "#"
-                        }}
-                        option4={{
-                            title: "",
-                            url: ""
-                        }}
-                        option5={{
-                            title: "",
-                            url: ""
-                        }}
+                        title1="Đèn ô tô"
+                        url1=""
+                        title2="Thiết bị thông minh"
+                        url2=""
+                        title3="Lốp bánh xe"
+                        url3=""
                     />
                     <FooterList
                         catalog="DỊCH VỤ"
-                        option1={{
-                            title: "Tin Tức",
-                            url: ""
-                        }}
-                        option2={{
-                            title: "Ý kiến đóng góp",
-                            url: ""
-                        }}
-                        option3={{
-                            title: "Hướng dẫn",
-                            url: ""
-                        }}
-                        option4={{
-                            title: "Chính sách",
-                            url: ""
-                        }}
-                        option5={{
-                            title: "",
-                            url: ""
-                        }}
+                        title1="Tin Tức"
+                        url1=""
+                        title2="Ý kiến đóng góp"
+                        url2=""
+                        title3="Hướng dẫn"
+                        url3=""
+                        title4="Chính sách"
+                        url4=""
                     />
                 </div>
             </div>

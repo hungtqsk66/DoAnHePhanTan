@@ -1,15 +1,4 @@
-.typeList{
-    width: 100%;
-    padding: 20px;
-}
-.typeList h2 i{
-    color: rgb(184, 55, 55);
-    margin: 0 14px;
-}
 .listContent{
-    background-color: #fff;
-    margin-top: 20px;
-    padding: 20px;
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -31,7 +20,7 @@
     transition: all .5s ease-out;
 }
 .listBox:hover img{
-    opacity: 0.9;
+    opacity: .8;
     transition: opacity .4s ease;
     
     cursor: pointer;
