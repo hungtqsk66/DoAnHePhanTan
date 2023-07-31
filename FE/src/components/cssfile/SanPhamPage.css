@@ -1,0 +1,24 @@
+.mainBox{
+    display: flex;
+    flex-direction: row;
+}
+.leftSanPham{
+    width: 500px;
+    margin: 10px 20px 0 0;
+}
+.leftSanPham .danhMuc{
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.leftSanPham .danhMuc h3, .leftSanPham .sanPhamMoi h3{
+    background-color: red;
+    color: #fff;
+    padding: 10px 15px;
+}
+.danhMuc p{
+    margin: 5px 10px;
+    border-bottom: 1px dashed #ccc;
+}
+.danhMuc p:last-child{
+    border: none;
+}

@@ -6,7 +6,7 @@ import './index.css'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Container from './components/Container'
-import HeaderPages from './components/headerPages'
+import HeaderPages from './components/headerPages.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

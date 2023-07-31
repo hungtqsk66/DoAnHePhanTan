@@ -40,13 +40,20 @@
     font-weight: 700;
     font-size: 18px;
 }
+.salingBox[type="row"]{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-.itemsBox[type = "row"]{
+.salingBox[type="row"] .itemsBox{
     display: flex;
     flex-direction: row;
 }
-.itemsBox[type = "row"] .itemInfo{
-    border: none;
-    padding-left: 40px;
-    width: 300px;
+.salingBox[type="row"] .itemsBox .itemInfo{
+    border-top: none;
+    border-left: 1px solid #ccc;
+    text-align: left;
+}
+.salingBox[type="row"] .itemsBox .itemInfo .titleItems{
+    width: 150px;
+    
 }

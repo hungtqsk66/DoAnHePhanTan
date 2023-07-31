@@ -1,6 +1,6 @@
 import './cssfile/Container.css';
-import ListTypeItems from './ListTypeItems';
-import Itemshow from './Itemshow.jsx';
+import HomePage from './HomePage';
+import SanPhamPage from './SanPhamPage';
 
 const data = [
     {
@@ -27,14 +27,8 @@ const containner = () => {
 
     return (
         <div className="container">
-            <div className="sections">
-                <h2><i className="fa-solid fa-lines-leaning"></i>DANH MỤC SẢN PHẨM</h2>
-                <ListTypeItems />
-            </div>
-            <div className="sections">
-                <h2><i className="fa-solid fa-lines-leaning"></i>SẢN PHẨM</h2>
-                <Itemshow prop = {data}/>
-            </div>
+            {/* <HomePage data={data} type={'row'}/> */}
+            <SanPhamPage data={data}/>
         </div>
     );
 };
