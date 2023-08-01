@@ -1,5 +1,7 @@
 import './cssfile/Container.css';
+import GioHangPage from './GioHangPage';
 import HomePage from './HomePage';
+import LienHePage from './LienHePage';
 import SanPhamPage from './SanPhamPage';
 
 const data = [
@@ -28,7 +30,9 @@ const containner = () => {
     return (
         <div className="container">
             {/* <HomePage data={data} type={'row'}/> */}
-            <SanPhamPage data={data}/>
+            {/* <SanPhamPage data={data}/> */}
+            {/* <LienHePage /> */}
+            <GioHangPage/>
         </div>
     );
 };

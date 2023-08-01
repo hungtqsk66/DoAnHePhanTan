@@ -1,0 +1,35 @@
+.contactBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#formSendMail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 35px;
+    width: 700px;
+}
+#formSendMail input{
+    padding: 8px 12px;
+}
+.emailAndPhone{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.emailAndPhone input{
+    width: 49%;
+}
+#formSendMail input[type ='submit']{
+    width: max-content;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(227, 90, 100);
+}
+#formSendMail input[type ='submit']:hover{
+    background-color: rgb(255, 80, 80);
+}

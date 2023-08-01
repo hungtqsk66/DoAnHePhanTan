@@ -2,16 +2,15 @@ import Itemshow from "./Itemshow";
 import './cssfile/SanPhamPage.css';
 
 const SanPhamPage = (prop) => {
-    console.log(prop);
     return (
         <div className="sections mainBox">
             <div className="leftSanPham">
                 <div className="danhMuc">
                     <h3>DANH MUC</h3>
                     <div className="danhMucList">
-                        <p>Den o to</p>
-                        <p>Thiet Bi Thong Minh</p>
-                        <p>Lop Banh xe</p>
+                        <a href="">Den o to</a>
+                        <a href="">Thiet Bi Thong Minh</a>
+                        <a href="">Lop Banh xe</a>
                     </div>
                 </div>
                 <div className="sanPhamMoi">

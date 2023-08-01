@@ -6,13 +6,15 @@ import './index.css'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Container from './components/Container'
-import HeaderPages from './components/headerPages.jsx'
+import HeaderPage from './components/HeaderPages.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Navbar />
     <Banner />
-    <HeaderPages name={'Sản Phẩm'} />
+    {/* <HeaderPage name={'San Pham'}></HeaderPage>
+    <HeaderPage name={'Tin Tức'}></HeaderPage>
+    <HeaderPage name={'Lien He'}></HeaderPage> */}
     <Container />
     <Footer />
   </React.StrictMode>

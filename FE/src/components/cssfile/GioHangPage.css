@@ -1,0 +1,63 @@
+.cartBox{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.showItemsInCart{
+    width: 77%;
+}
+.priceAndPolicy{
+    font-size: 15px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sumBox{
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+.showTien{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+}
+.showTien h2{
+    color: red;
+}
+.thanhToan{
+    margin-top: 16px;
+    font-weight: 500;
+}
+.thanhToan p::before{
+    content: '';
+    transform: translateY(-4px);
+    display: inline-block;
+    background-color: #aaa;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;;
+    margin-right: 8px;
+}
+.btnThanhToan{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: red;
+    width: 100%;
+    opacity: .6;
+    transition: all .3s ease;
+}
+.btnThanhToan:hover{
+    opacity: .8;
+}
+.policy{
+    padding: 16px;
+    background-color: #d9edf7;
+    border-radius: 5px;
+    margin-top: 16px;
+}
