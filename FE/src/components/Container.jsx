@@ -1,9 +1,10 @@
-import { Routes, Route, Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './cssfile/Container.css';
 import GioHangPage from './GioHangPage';
 import HomePage from './HomePage';
 import LienHePage from './LienHePage';
 import SanPhamPage from './SanPhamPage';
+import ChiTiet from './ChiTiet';
 
 const data = [
     {
@@ -12,7 +13,7 @@ const data = [
         price: '190000',
         status: '200',
         description: 'mô tả gì đó cũng được k biết',
-        category: 'đèn ô tô',
+        category: 'den o to',
         image: 'https://hinhanh.webvua.com/images/item/4850/resize/0421242420250.jpg'
     },
     {
@@ -21,7 +22,7 @@ const data = [
         price: '190000',
         status: '200',
         description: 'mô tả gì đó cũng được k biết',
-        category: 'đèn ô tô',
+        category: 'thiet bi thong minh',
         image: 'https://hinhanh.webvua.com/images/item/4850/resize/4049002020020.jpg'
     },
     {
@@ -30,7 +31,7 @@ const data = [
         price: '190000',
         status: '200',
         description: 'mô tả gì đó cũng được k biết',
-        category: 'đèn ô tô',
+        category: 'lop banh xe',
         image: 'https://hinhanh.webvua.com/images/item/4850/resize/0220222210124.jpg'
     }
 ]
@@ -45,6 +46,7 @@ const containner = () => {
                 <Route path='/lienhe' element={<LienHePage />}/>
                 <Route path='/giohang' element={<GioHangPage/>}/>
             </Routes>
+            <ChiTiet/>
         </div>
     );
 };
