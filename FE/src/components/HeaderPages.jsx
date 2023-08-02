@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const HeaderPages = (prop) => {
@@ -16,7 +17,10 @@ const HeaderPages = (prop) => {
                 cursor: 'default'
             }}>
             <h2>{prop.name}</h2>
-            <p>Trang chủ {'>'} {prop.name}</p>
+            <div className="path" style={{display:'flex',flexDirection:'row'}}>
+                <Link to='/' style={{color:'#fff',marginRight:'5px'}}>Trang chủ </Link>
+                <p>{'>'} {prop.name}</p>
+            </div>
         </div>
     );
 };
