@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom';
 import './cssfile/Container.css';
 import GioHangPage from './GioHangPage';
 import HomePage from './HomePage';
@@ -29,10 +30,17 @@ const containner = () => {
 
     return (
         <div className="container">
-            {/* <HomePage data={data} type={'row'}/> */}
-            {/* <SanPhamPage data={data}/> */}
-            {/* <LienHePage /> */}
-            <GioHangPage/>
+            <Routes>
+                <Route path='/' element={<HomePage data={data} type={'row'} />}/>
+                <Route path='/sanpham' element={<SanPhamPage data={data} />}/>
+                <Route path='/lienhe' element={<LienHePage />}/>
+                <Route path='/giohang' element={<GioHangPage />}/>
+                
+                
+                
+                
+            </Routes>
+
         </div>
     );
 };

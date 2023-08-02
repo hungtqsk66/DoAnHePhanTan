@@ -1,4 +1,5 @@
 import './cssfile/NavBar.css';
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
@@ -9,10 +10,10 @@ const NavBar = () => {
                         <img src="/images/logo.png" alt="" width={'300px'}/>
                     </div>
                     <nav className="navOptions">
-                        <a className="navOption" href="">TRANG CHỦ</a>
-                        <a className="navOption" href="">SẢN PHẨM</a>
-                        <a className="navOption" href="">TIN TỨC</a>
-                        <a className="navOption" href="">LIÊN HỆ</a>
+                        <Link className="navOption" to="/">TRANG CHỦ</Link>
+                        <Link className="navOption" to="/sanpham">SẢN PHẨM</Link>
+                        <Link className="navOption" to="/tintuc">TIN TỨC</Link>
+                        <Link className="navOption" to="/lienhe">LIÊN HỆ</Link>
                     </nav>
                 </div>
                 <div className="searchAndCart">
@@ -20,12 +21,12 @@ const NavBar = () => {
                         <input type="text" />
                         <i className="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <div className="cart">
+                    <Link className="cart" to='/giohang'>
                         <i className="fa-solid fa-cart-shopping"></i>
                         <p className="countItems">
                             0
                         </p>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </>

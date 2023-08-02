@@ -2,7 +2,11 @@ import './cssfile/GioHangPage.css'
 const GioHangPage = () => {
     return (
         <div className="sections cartBox">
-            <div className="showItemsInCart">a</div>
+            <div className="showItemsInCart">
+                <div className="titleCart">
+                    <p className=""></p>
+                </div>
+            </div>
             <div className="priceAndPolicy">
                 <div className="sumBox">
                     <div className="showTien">
