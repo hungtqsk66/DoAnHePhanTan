@@ -8,14 +8,12 @@ const Itemshow = (prop) => {
             <Link to={"/" + (item.category).split(' ').join('') + item.product_id}
                 className="itemsBox"
                 key={item.product_id} >
-                <Link to={"/" + (item.category).split(' ').join('') + item.product_id}>
+                <div className='imageBox'>
                     <img src={item.image} alt="" />
-                </Link>
+                </div>
                 <div className="itemInfo">
                     <h4 className='titleItems'>
-                        <Link to={"/" + (item.category).split(' ').join('') + item.product_id}>
-                            {item.product_name}
-                        </Link>
+                        {item.product_name}
                     </h4>
                     <p>{item.price}</p>
                 </div>
