@@ -5,7 +5,7 @@ import './cssfile/Itemshow.css';
 const Itemshow = (prop) => {
     const items = prop.prop.data.map((item) => {
         return (
-            <Link to={"/" + (item.category).split(' ').join('') + item.product_id}
+            <Link to={'/' + (item.category).split(' ').join('') + item.product_id}
                 className="itemsBox"
                 key={item.product_id} >
                 <div className='imageBox'>

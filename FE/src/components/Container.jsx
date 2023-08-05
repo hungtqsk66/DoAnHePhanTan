@@ -4,7 +4,7 @@ import GioHangPage from './GioHangPage';
 import HomePage from './HomePage';
 import LienHePage from './LienHePage';
 import SanPhamPage from './SanPhamPage';
-import ChiTiet from './ChiTiet';
+import ChiTietPages from './ChiTietPages';
 
 const data = [
     {
@@ -46,7 +46,7 @@ const containner = () => {
                 <Route path='/lienhe' element={<LienHePage />}/>
                 <Route path='/giohang' element={<GioHangPage/>}/>
             </Routes>
-            <ChiTiet/>
+            <ChiTietPages data={data}/>
         </div>
     );
 };
