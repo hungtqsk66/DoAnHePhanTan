@@ -1,9 +1,12 @@
 import os
-from fastapi import FastAPI,Request
+from fastapi import FastAPI,Request,HTTPException
 from controllers import auth
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from models.middlewares.Token_auth import Token_Middleware
+
+from dbs.db import Database
+
 
 app = FastAPI()
 app.add_middleware(
@@ -19,5 +22,7 @@ async def check_token_expired(request:Request,call_next):
     
 app.mount("/public", StaticFiles(directory=os.getcwd()+"\public"), name="public")
 app.include_router(auth.router)
+
+
 
 
