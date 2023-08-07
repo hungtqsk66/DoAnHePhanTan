@@ -4,7 +4,7 @@ class SQL_Server_Query:
     @staticmethod
     def Insert_User_Query(username:str,password:str,full_name:str)->str:
         query = f'''
-                    insert into dbo.users (username,password,full_name,disabled) 
+                    insert into users (username,password,full_name,disabled) 
                     values('{username}','{password}','{full_name}',0)
                 '''
         return query

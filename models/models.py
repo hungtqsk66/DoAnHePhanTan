@@ -10,7 +10,7 @@ class TokenData(BaseModel):
 
 
 class User(BaseModel):
-    uid: int
+    uid: int  | None = None
     username: str
     full_name: str | None = None
     disabled: bool | None = None

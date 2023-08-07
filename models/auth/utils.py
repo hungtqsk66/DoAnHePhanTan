@@ -22,7 +22,7 @@ class Auth_utils:
     @staticmethod
     def authenticate_user(db:Database, username: str, password: str) ->dict or None:
         query = SQL_Server_Query.Get_User_Query(username=username)
-        user = db.executeQuery(query)[0]
+        user = db.executeQuery(query,get_type='one')
         if not user:
             return False
         user = UserInDB(uid = user[0],username = user[1],password= user[2])
