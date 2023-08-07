@@ -29,7 +29,7 @@ class Database:
    
     
     #----------------------------------------------------------------#
-    #Hàm này thực hiện truy vấn cơ sở dữ  liệu
+    #Hàm này thực hiện truy vấn cơ sở dữ  liệu (có thêm tham số là get_type chỉ nhận 'one' là chỉ lấy ra một cột , 'many' là nhiều cột )
     @staticmethod
     def executeQuery( query:str,get_type:str = None):
         conn = Database.load_db_configs()
