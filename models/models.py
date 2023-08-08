@@ -28,3 +28,8 @@ class Product(BaseModel):
     description:str
     category:str
     image:str
+
+class Cart_Product(BaseModel):
+    product_id:int
+    uid:int
+    quantity:int
