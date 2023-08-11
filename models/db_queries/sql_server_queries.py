@@ -21,3 +21,22 @@ class SQL_Server_Query:
     @staticmethod 
     def GetAll_Products_Query()->str:
         return "select * from products"
+
+    @staticmethod
+    def GetAll_Cart_Query()-> str:
+        return "select * from cart"
+
+    @staticmethod
+    def Add_Cart_Query(uid:int,product_id:int,quantity:int)->str:
+        query = f"INSERT INTO cart (uid, product_id,quantity) VALUES ('{uid}','{product_id}','{quantity}')"
+        return query
+
+    @staticmethod
+    def Remove_Product_from_Cart(product_id:int)->str:
+        query = f"delete from cart where product_id ='{product_id}'"
+        return query
+        
+    @staticmethod 
+    def Update_Quantity_from_Cart(product_id:int,quantity:int)->str:
+        query = f"UPDATE cart SET quantity = '{quantity}' WHERE product_id='{product_id}'"
+        return query
