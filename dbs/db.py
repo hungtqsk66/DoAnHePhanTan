@@ -1,7 +1,6 @@
 #Singleton pattern
 import pyodbc
-import os
-from dotenv import load_dotenv
+from decouple import config
 
 #Class database này dùng để thực hiện truy vấn CSDL SQL Server
 
@@ -19,17 +18,15 @@ class Database:
     #Hàm này thực hiện lấy object cursor nếu mình muốn thực hiện các thao tác với nó
     @staticmethod
     def load_db_configs():
-        load_dotenv()
         conn =  pyodbc.connect(
-                    'Driver={'+os.getenv('Driver')+'};'
-                    'Server='+os.getenv('Server')+';'
-                    'Database='+os.getenv('Database')+';'
-                    'Trusted_Connection='+os.getenv('Trusted_Connection')+';'
+                    'Driver={'+config('Driver')+'};'
+                    'Server='+config('Server')+';'
+                    'Database='+config('Database')+';'
+                    'Trusted_Connection='+config('Trusted_Connection')+';'
                 )    
         
         return conn
    
-
     
     #----------------------------------------------------------------#
     #Hàm này thực hiện truy vấn cơ sở dữ  liệu (có thêm tham số là get_type chỉ nhận 'one' là chỉ lấy ra một cột , 'many' là nhiều cột )
