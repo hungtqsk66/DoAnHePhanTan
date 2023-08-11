@@ -1,0 +1,67 @@
+.loginAndRegister{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.loginPage, .signupPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#frmLogin, #frmSignUP{
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+}
+.loginPage h1, .signupPage h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#frmLogin label, #frmSignUP label{
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+#frmLogin input, #frmSignUP input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+input[type="submit"]:hover{
+    opacity: .8;
+}
+
+.showAlert{
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
+.changeForm{
+    background-color: transparent;
+    padding: 0;
+    margin-top: 30px;
+}
+.changeForm:hover{
+    color: #333;
+    text-decoration: underline;
+}

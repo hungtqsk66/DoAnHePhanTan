@@ -10,7 +10,7 @@ const NavBar = () => {
                         <img src="/images/logo.png" alt="" width={'300px'}/>
                     </div>
                     <nav className="navOptions">
-                        <Link className="navOption" to="/">TRANG CHỦ</Link>
+                        <Link className="navOption" to="/home">TRANG CHỦ</Link>
                         <Link className="navOption" to="/sanpham">SẢN PHẨM</Link>
                         <Link className="navOption" to="/tintuc">TIN TỨC</Link>
                         <Link className="navOption" to="/lienhe">LIÊN HỆ</Link>

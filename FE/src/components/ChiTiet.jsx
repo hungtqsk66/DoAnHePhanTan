@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import './cssfile/ChiTiet.css'
 
 
@@ -25,7 +24,7 @@ const ChiTiet = (prop) => {
                     <input className="quantityItems" type="number" name="quantity" min='1' defaultValue={'1'} />
                     <button className="controlNumber" onClick={includeNumber}> + </button>
                 </div>
-                <Link className="btnAddInCart">Thêm vào giỏ hàng</Link>
+                <button className="btnAddInCart">Thêm vào giỏ hàng</button>
                 <p>{data.description}</p>
             </div>
         </div>

@@ -8,19 +8,22 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Container from './components/Container'
 import HeaderPage from './components/HeaderPages.jsx'
+import DangNhapPage from './DangNhapDangKi/DangNhapPage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
     <React.StrictMode>
-      <Navbar />
       <Routes>
-        <Route path='/' element={<Banner />}/>
-        <Route path='/sanpham' element={<HeaderPage name={'San Pham'}></HeaderPage>}/>
-        <Route path='/tintuc' element={<HeaderPage name={'Tin Tức'}></HeaderPage>}/>
-        <Route path='/lienhe' element={<HeaderPage name={'Lien He'}></HeaderPage>}/>
+        <Route path='/' element={<DangNhapPage/>} />
+        <Route path='/home' element={<Navbar />} />
+        <Route path='/home' element={<Banner />} />
+        <Route path='/sanpham' element={<HeaderPage name={'San Pham'}/>} />
+        <Route path='/tintuc' element={<HeaderPage name={'Tin Tức'}/>} />
+        <Route path='/lienhe' element={<HeaderPage name={'Lien He'}/>} />
+        <Route path='/home' element={<Container  />} />
+        <Route path='/home' element={<Footer />} />
       </Routes>
-        <Container />
-        <Footer />
+
     </React.StrictMode>
   </Router>
 
