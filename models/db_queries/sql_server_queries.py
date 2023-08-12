@@ -21,3 +21,13 @@ class SQL_Server_Query:
     @staticmethod 
     def GetAll_Products_Query()->str:
         return "select * from products"
+    
+    @staticmethod
+    def get_product_by_id(product_id:int):
+        query = f"SELECT * FROM product WHERE product_id = '{product_id}';"
+        return query
+    
+    @staticmethod
+    def delete_product_by_id(product_id: int):
+        query = f"DELETE FROM product WHERE product_id = '{product_id}';"
+        return query

@@ -28,3 +28,26 @@ class Product(BaseModel):
     description:str
     category:str
     image:str
+
+class ProductItem(BaseModel):
+    # product_id: int
+    product_name: str
+    price: int
+    status: bool
+    description: str
+    category: str
+    image: str
+
+
+class ProductUpdateRequest(BaseModel):
+    product_id:int
+    product_name: str
+    price: int
+    status: int
+    description: str
+    category: str
+    image: str
+
+
+# class ProductResponse(ProductItem):
+#     product_id: int
