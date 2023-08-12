@@ -57,7 +57,9 @@ class Auth():
     
     @staticmethod
     async def handle_logout():
-        return JSONResponse(content={"message":"logout successfully"}).delete_cookie("token")
+        response =JSONResponse(content={"message":"logout successfully"})
+        response.delete_cookie("token") 
+        return response
     
     @staticmethod
     async def get_current_user(request: Request):
